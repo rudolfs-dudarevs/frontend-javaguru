@@ -25,6 +25,27 @@ main {
     border: 2px solid black;
     font-weight: bold;
     line-height: 100px;
+    background-color: blueviolet;
+}
+/* 1. Līmenis */
+.primary-box {
+    background-color: crimson;
+}
+/* 2. Līmenis */
+.secondary-box {
+    background-color: chartreuse;
+}
+/* 3. Līmenis */
+.special-box {
+    background-color: hotpink;
+}
+
+.secondary-box.special-box {
+    background-color: coral;
+}
+/* 4. Līmenis */
+.row .row-specialrow .primary-box {
+    background-color: yellowgreen;
 }
 
 /* 
@@ -52,16 +73,16 @@ main {
     box 8 - background-color: deeppink;
 */
 
-/* 1. Līmenis */
 
 
-/* 2. Līmenis */
 
 
-/* 3. Līmenis */
 
 
-/* 4. Līmenis */
+
+
+
+
 
 
 /* 5. Līmenis */
