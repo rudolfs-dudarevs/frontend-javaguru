@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS Specificity</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Element position</h1>
+            <div class="container">
+                <div class="box">Static</div>
+            </div>
+            <div class="container">
+                <div class="box box-relative">Relative</div>
+            </div>
+            <div class="container container-absolute">
+                <div class="box box-absolute-1">Absolute 1</div>
+                <div class="box box-absolute-2">Absolute 2</div>
+                <div class="box box-static">Static</div>
+            </div>
+            <div class="fixed-element">
+                <div class="box box-absolute-4">Absolute</div>
+            </div>
+        </main>
+    </body>
+</html>

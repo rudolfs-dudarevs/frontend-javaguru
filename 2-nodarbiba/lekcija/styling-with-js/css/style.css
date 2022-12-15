@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1000px;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    /* transition: all 0.2s linear; */
+    /* transition: all 0.2s ease-in; */
+    /* transition: all 0.2s ease-out; */
+    transition: all 0.2s ease-in-out;
+}
+
+#action-btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    transition: all 0.2s ease-in-out;
+}
+
+#action-btn:hover {
+    background-color: white;
+    border: 2px solid crimson;
+    color: crimson;
+}
