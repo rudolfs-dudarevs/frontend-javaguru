@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+/* 
+    Izveidojam selektorus ar atbilstošu specifitāti,
+    lai visu kastīšu krāsa atbilstu attēlā redzamajai:
+    
+    LEVEL 1
+    box 1 - background-color: blueviolet;
+    box 2 - background-color: blueviolet;
+
+    LEVEL 2
+    box 3 - background-color: crimson;
+    box 4 - background-color: chartreuse;
+
+    LEVEL 3
+    box 5 - background-color: hotpink;
+    box 6 - background-color: coral;
+
+    LEVEL 4
+    box 7 - background-color: yellowgreen;
+    box 8 - background-color: cyan;
+
+    LEVEL 5
+    box 7 - background-color: green;
+    box 8 - background-color: deeppink;
+*/
+
+/* 1. Līmenis */
+.box {
+    background-color: blueviolet;
+}
+
+/* 2. Līmenis */
+
+
+/* 3. Līmenis */
+
+
+/* 4. Līmenis */
+
+
+/* 5. Līmenis */
