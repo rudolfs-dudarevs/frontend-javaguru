@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,28 +7,41 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+        
     </head>
     <body>
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <div class="container1">
+                <div id="action-el1" class="box1">Element</div>
             </div>
-            <button>Change style</button>
+            <div class="btn">
+            <button id="action-btn1" onclick="changeStyle1()">Change style</button>
+            <button id="reset-btn1" onclick="reset1()">Reset</button>
+            </div>
 
             <!-- 2. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="space"></div>
+            <div class="container2" id="space">
+                <div id="action-el2" class="box2">Element</div>
             </div>
-            <button>Change style</button>
+            <div class="btn">
+            <button id="action-btn2" onclick="changeStyle2()">Change style</button>
+            <button id="reset-btn2" onclick="reset2()">Reset</button>
+            </div>
 
             <!-- 3. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="space"></div>
+            <div class="container3">
+                <div id="action-el3" class="box3">Element</div>
             </div>
-            <button>Change style</button>
+            <div class="btn">
+            <button id="action-btn3" onclick="changeStyle3()">Change style</button>
+            <button id="reset-btn3" onclick="reset3()">Reset</button>
+            </div>
         </main>
+        <script src="./js/app.js"></script>
     </body>
 </html>
