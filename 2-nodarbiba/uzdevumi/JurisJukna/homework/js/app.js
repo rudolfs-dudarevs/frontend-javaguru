@@ -12,16 +12,19 @@ const changeStyle1 = () => {
     actionEl1.style.borderBottom = "80px solid #17db05";
     actionBtn1.style.backgroundColor = "#17db05e3"
     actionBtn1.style.color = "blue"
+    actionEl1.style.margin = "0 0 0 0"
 }
 
 const changeStyle2 = () => {
     actionEl2.style.borderBottom = "80px solid #17db05cb";
     actionBtn2.style.backgroundColor = "#17db05b9"
     actionBtn2.style.color = "red"
+    actionEl2.style.margin = "0 0 0 0"
 }
 
 const changeStyle3 = () => {
     actionEl3.style.borderBottom = "80px solid #17db0596";
     actionBtn3.style.backgroundColor = "#5a2d02"
     title.style.fontFamily = "Rubik Gemstones"
+    actionEl3.style.margin = "0 0 0 0"
 }

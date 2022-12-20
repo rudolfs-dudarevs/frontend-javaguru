@@ -65,6 +65,7 @@ main {
     left: 100px;
     width: 0; 
     height: 0; 
+    margin: 15px;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     border-bottom: 80px solid black;
@@ -75,6 +76,7 @@ main {
     left: 60px;
     width: 240px; 
     height: 0; 
+    margin: 65px;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     border-bottom: 80px solid black;
@@ -84,7 +86,8 @@ main {
     position: relative;
     left: 30px;
     width: 300px; 
-    height: 0; 
+    height: 0;
+    margin: 88px;
     border-left: 80px solid transparent;
     border-right: 80px solid transparent;
     border-bottom: 80px solid black;
