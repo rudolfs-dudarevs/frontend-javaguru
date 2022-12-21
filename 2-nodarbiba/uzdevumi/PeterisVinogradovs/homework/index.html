@@ -1,33 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <title>Homework</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
-        <link rel="stylesheet" href="./css/style.css" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <main>
             <!-- 1. Piemērs -->
-            <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <h1>Style with CSS and JS</h1>
+            <div class="container">
+                <div id="action-el-1" class="box box-1">Top/Left</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn-1" class="btn" onclick="differentStyle()">Change style</button>
+            <button id="action-btn-1-1" class="btn" onclick="resetStyle()">Reset style</button>
 
             <!-- 2. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="action-el-2" class="box box-2">Hello!</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn-2" class="btn" onclick="differentStyle2()">Change style</button>
+            <button id="action-btn-2-1" class="btn" onclick="resetStyle2()">Reset style</button>
 
             <!-- 3. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="action-el-3" class="box box-3"></div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn-3" class="btn" onclick="differentStyle3()">Dog #1</button>
+            <button id="action-btn-3-1" class="btn" onclick="resetStyle3()">Dog #2</button>
         </main>
+        <script src="./app.js"></script>
     </body>
 </html>

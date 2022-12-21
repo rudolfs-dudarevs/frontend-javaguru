@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;;
+}
+
+main {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1000px;
+}
+
+
+.container {
+    
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px auto;
+}
+
+.box {
+    
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #4B4453;
+    margin: 1px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.box-2 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(64, 191, 128);
+}
+
+.box-3 {
+    width: 99%;
+    height: 99%;
+    line-height: 293px;
+    margin: 1px auto;
+    background-image: url(https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    font-weight: bold;
+    border: none;
+    background-color: lightsalmon;
+    border-radius: 10px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid lightsalmon;
+    color: black;
+}
+
+.btn:active:focus {
+    background-color: lightsalmon;
+  }
