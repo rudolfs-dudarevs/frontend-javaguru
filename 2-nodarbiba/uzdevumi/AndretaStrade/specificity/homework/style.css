@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+main{
+    width: 360px;
+    margin: auto;
+    text-align: center;
+}
+.container{
+    width: 300px;
+    height: 300px;
+    border: 3px solid black;
+    margin: 30px;
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: chocolate;
+    color: white;
+    font-weight: bold;
+    line-height: 100px;
+    top: 20px;
+    left: 50px;
+    transition: all 0.9s linear;
+}
+#action-btn{
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:gray;
+}
