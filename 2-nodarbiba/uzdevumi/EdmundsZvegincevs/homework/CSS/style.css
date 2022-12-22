@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+main {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1000px;
+}
+
+.container1, .container2, .container3 {
+    height: 300px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 30px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #2AD691;
+    color: #fefefe;
+    font-weight: bold;
+    line-height: 100px; /* iecentrēt vertikāli */
+}
+
+.box-relative {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.box-absolut {
+    position: relative;
+    top: 167px;
+    left: 194px;
+}

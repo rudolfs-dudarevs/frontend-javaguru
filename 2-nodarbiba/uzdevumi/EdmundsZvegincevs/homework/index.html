@@ -6,28 +6,28 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <div class="container1">
+                <div class="box">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="button1" onclick="changeStyle1()">Change 1st style</button>
 
             <!-- 2. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container2">
+                <div class="box box-relative">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="button2" onclick="changeStyle2()">Change 2nd style</button>
 
             <!-- 3. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container3">
+                <div class="box box-absolut">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="button3" onclick="changeStyle3()">Change 3rd style</button>
         </main>
     </body>
 </html>
