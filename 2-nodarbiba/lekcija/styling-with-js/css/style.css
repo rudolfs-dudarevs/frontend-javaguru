@@ -31,7 +31,7 @@ main {
     /* transition: all 0.2s linear; */
     /* transition: all 0.2s ease-in; */
     /* transition: all 0.2s ease-out; */
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s linear;
 }
 
 #action-btn {
