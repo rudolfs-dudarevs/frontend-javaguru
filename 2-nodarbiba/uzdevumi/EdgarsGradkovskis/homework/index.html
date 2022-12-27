@@ -12,22 +12,33 @@
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="action-el" class="box">Shadow</div>
+                
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle()">Change style</button>
 
+            
             <!-- 2. Piemērs -->
             <div>
-                <div>Element</div>
+                <div class="container">
+                    <div id="action-el2" class="box">Movement</div>
+
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle2()">Change style</button>
+         
+
 
             <!-- 3. Piemērs -->
             <div>
-                <div>Element</div>
+                <div class="container">
+                    <div id="action-el3" class="box">Border Resize</div>
+
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle3()">Change style</button>
+
+
         </main>
+        <script src="./js/app.js"></script>
     </body>
 </html>
