@@ -3,6 +3,4 @@ main {
     height: 100vh;
     padding: 5rem 0 0;
     color: var(--white);
-    font-weight: bold;
-    text-align: center;
 }
