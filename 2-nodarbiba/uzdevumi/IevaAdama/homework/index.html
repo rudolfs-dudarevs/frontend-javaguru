@@ -12,22 +12,23 @@
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="select-first-el" class="element blue-el">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="select-btn" class="btn blue-btn" onclick="changeStyleBlue()">Change style</button>
 
             <!-- 2. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="select-second-el" class="element red-el">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="select-second-btn" class="btn red-btn" onclick="changeStyleRed()">Change style</button>
 
             <!-- 3. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="select-third-el" class="element yellow-el">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="select-third-btn" class="btn yellow-btn" onclick="changeStyleYellow()">Change style</button>
         </main>
+        <script src="./js/app.js"></script>
     </body>
 </html>
