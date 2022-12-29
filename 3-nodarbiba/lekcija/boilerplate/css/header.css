@@ -5,17 +5,16 @@
     color: var(--black);
     box-shadow: 0px 1px 4px var(--primary);
     background-color: var(--white);
+    color: var(--black);
 }
 
 .title {
     font-weight: bold;
     font-size: 1.7rem;
-    color: var(--black);
     letter-spacing: 2.1px;
 }
 
 .subtitle {
-    display: block;
     font-size: 1rem;
     color: var(--primary);
     margin: 0.3rem 0 0;

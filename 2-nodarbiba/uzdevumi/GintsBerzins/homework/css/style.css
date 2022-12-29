@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1000px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.container3 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.space {
+    height: 30px;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: crimson;
+    color: white;
+    transition: all 0.6s ease-out;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: crimson;
+    color: white;
+    transition: all 0.6s ease-out;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.box3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #1d3557;
+    color: white;
+    transition: all 1.2s ease-out;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#action-btn1, #action-btn2, #action-btn3  {
+    width: 120px;
+    height: 40px;
+    margin: 0 7px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    transition: all 0.2s ease-in-out;
+}
+
+#reset-btn1, #reset-btn2, #reset-btn3  {
+    width: 120px;
+    height: 40px;
+    margin: 0 7px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    transition: all 0.2s ease-in-out;
+}
+
+#action-btn1:hover, #action-btn2:hover, #action-btn3:hover {
+    background-color: white;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+#reset-btn1:hover, #reset-btn2:hover, #reset-btn3:hover {
+    background-color: white;
+    border: 1px solid gray;
+    color: gray;
+}
