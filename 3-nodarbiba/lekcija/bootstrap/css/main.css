@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6rem 0 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.row div {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid grey;
+    background-color: lavender;
+}
