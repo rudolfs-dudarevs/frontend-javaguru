@@ -5,8 +5,8 @@ main {
     height: 100vh;
     padding: 5rem 0 0;
     color: var(--white);
-    font-weight: bold;
-    text-align: center;
+    /* font-weight: bold; */
+    /* text-align: center; */
 }
 
 .nav,
@@ -30,7 +30,7 @@ main {
     background-color: var(--tertiary);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .nav {
         width: 30%;
     }
@@ -44,10 +44,10 @@ main {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
     .nav,
     .widget {
-        width: 25%
+        width: 25%;
     }
 
     .content {

@@ -53,15 +53,37 @@ main {
 */
 
 /* 1. Līmenis */
-
+.row .box{
+    background-color: blueviolet;
+}
 
 /* 2. Līmenis */
-
+.row .box.primary-box{
+    background-color: crimson;
+}
+.row .box.secondary-box{
+    background-color: chartreuse;
+}
 
 /* 3. Līmenis */
-
+.row .primary-box.special-box{
+    background-color: hotpink;
+}
+.row .secondary-box.special-box{
+    background-color: coral;
+}
 
 /* 4. Līmenis */
-
-
+.row.special-row .primary-box.special-box{
+    background-color: yellowgreen;
+}
+.row.special-row .secondary-box{
+    background-color: cyan;
+}
 /* 5. Līmenis */
+.row.special-row .primary-box.special-box{
+    background-color: green;
+}
+.row.special-row .secondary-box.special-box{
+    background-color: deeppink;
+}

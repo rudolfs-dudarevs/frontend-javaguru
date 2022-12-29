@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: green;
+}
+
+main {
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1000px;
+}
+
+#h1 {
+    font-weight: bold;
+    font-size: 25pt;
+    color: rgb(252, 248, 247);
+    padding: 50px;
+}
+
+#btn1 {
+    width: 100px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:black;
+    transition: all 0.2s ease-in-out;
+
+}
+#btn2 {
+    width: 160px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:black;
+    transition: all 0.2s ease-in-out;
+
+}
+#btn3 {
+    width: 80px;
+    height: 100px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:black;
+    transition: all 0.2s ease-in-out;
+
+}
+
+#El1 {
+    position: relative;
+    left: 100px;
+    width: 0; 
+    height: 0; 
+    margin: 15px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid black;
+}
+
+#El2 {
+    position: relative;
+    left: 60px;
+    width: 240px; 
+    height: 0; 
+    margin: 65px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid black;
+}
+
+#El3 {
+    position: relative;
+    left: 30px;
+    width: 300px; 
+    height: 0;
+    margin: 88px;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid black;
+}
+
+
