@@ -29,3 +29,18 @@
 .card-description {
     padding: 0 0 20px;
 }
+
+@media only screen and (min-width: 1200px) {
+    .product-card {width: calc(25% - 30px);}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .product-card {width: calc(50% - 30px);}
+}
+
+
+/* Mainīt .product-card elementu platumu, iekš product-card.css veikt izmaiņas:
+       
+4. Sākot no 1200px ekrāna platuma .product-card elementu width ir calc(25% - 30px);
+   Ekrāna izmērā starp 768px un 1200px .product-card elementu witdh ir calc(50% - 30px);
+   Uz mazākiem ekrāna izmēriem .product-card elementu width ir 100%; */

@@ -1,7 +1,7 @@
 main {
     width: 100%;
     height: 100vh;
-    padding: 5rem 0 0;
+    padding: 3rem 0 0;
     color: var(--white);
     font-weight: bold;
     text-align: center;
@@ -16,3 +16,10 @@ main {
     gap: 30px;
     padding: 50px;
 }
+
+@media only screen and (min-width: 1200px) {
+    main {padding: 5rem 0 0}
+}
+
+/* 3. Sākot no 1200px ekrāna platuma main elementa padding ir 5rem 0 0;
+Uz mazākiem ekrāniem padding ir 3rem 0 0; */
