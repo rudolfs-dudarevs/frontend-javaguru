@@ -18,7 +18,7 @@ const changeStyle = () => {
     actionEls.style.animationIterationCount = "infinite";
     actionEls.style.animationDelay = "1s";
     //nesaprotu, ko sabojāju, jo vinibrīd mirkšķināšanu biju panākusi un tad pazuda un vairs nevaru saprast, kur bēda?
-    actionElch.style.font = "60px";
+    actionElch.style.fontSize = "60px";
     actionElch.style.color = "darkorange"
     actionEls.style.animationDelay = "3s";
    // actionElch.style.display = "none"
@@ -29,7 +29,38 @@ setTimeout = () => {
     actionBtn3.style.visibility = "hidden"
 },3
 
-//Diemžēl neatradu veidu, kā nodrošināt, ka katra poga strādā atsevišķi
+// KODA PIEMĒRS
+changeElStyle = () => {
+    actionEl.style.backgroundColor = "black";
+    actionEl.style.width = "200px";
+    actionEl.style.height = "200px";
+}
+
+changeElStyle = () => {
+    actionEls.style.backgroundColor = "green";
+    actionEls.style.visibility = "visible";
+    actionEls.style.animationName = "blink";
+    actionEls.style.animationDuration = "2s";
+    actionEls.style.animationIterationCount = "infinite";
+    actionEls.style.animationDelay = "1s";
+}
+
+changeElchStyle = () => {
+    actionElch.style.fontSize = "60px";
+    actionElch.style.color = "darkorange"
+
+    // Sintakse:
+    // setTimeout(arg1, arg2)
+    // arg1 - funkcija ko izpildīt
+    // arg2 - pēc cik ilga laika milisekundēs izpildīt arg1
+    // setTimeout(() = {}, 3000)
+    setTimeout(() => {
+        actionBtn3.style.visibility = "hidden"
+    }, 3000);
+}
+
+
+
 
 
 
