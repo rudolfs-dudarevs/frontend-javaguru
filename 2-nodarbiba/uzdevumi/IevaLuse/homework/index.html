@@ -7,27 +7,39 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
             <div>
-                <div>Element</div>
+                <div class="container">
+                    <div id="action-el" class="box">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle()">CLICK ME</button>
 
             <!-- 2. Piemērs -->
             <div>
-                <div>Element</div>
+                <div class="container">
+                    <div id="pulse-el" class="box-2">ELEMENT</div>
+                    <!-- div class="pulse"></div-->
             </div>
-            <button>Change style</button>
+            <button id="pulse-btn" onclick="pulseStyle()">PULSE</button>
 
             <!-- 3. Piemērs -->
             <div>
-                <div>Element</div>
+                <div class="container">
+                    <span id="blink">Message</span> 
+                    <div id="send-el">
+            <div class="center">
+            <div class="outer button"> 
+            <button>SEND</button>
+            <span></span>
+            <span></span>
             </div>
-            <button>Change style</button>
+            <!--button id="third-btn" onclick="">Send</button-->
         </main>
+        <script src="./js/app.js"></script>
     </body>
 </html>
