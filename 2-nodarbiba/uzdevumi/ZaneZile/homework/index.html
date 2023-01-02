@@ -11,23 +11,26 @@
     <body>
         <main>
             <!-- 1. Piemērs -->
-            <h1>Express yourself</h1>
+            <h1 class="main-title">Express yourself!</h1>
             <div>
-                <div>Element</div>
+                <div>Date and Time</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time</button>
+            <p id="demo"></p>
 
             <!-- 2. Piemērs -->
             <div>
-                <div>Element</div>
+                <div id="demo2">Hide me!</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+            
 
             <!-- 3. Piemērs -->
             <div>
-                <div>Element</div>
+                <div>Third</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle()">Which button is green?</button>
         </main>
+        <script src="./js/app.js"></script>
     </body>
 </html>
