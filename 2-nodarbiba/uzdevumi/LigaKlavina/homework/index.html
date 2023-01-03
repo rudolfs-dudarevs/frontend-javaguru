@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -12,22 +13,23 @@
         <main>
             <!-- 1. Piemērs -->
             <h1>Express yourself</h1>
-            <div>
-                <div>Element</div>
+            <div class="container">
+                <div id="action-el" class="box">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="action-btn" onclick="changeStyle()">Change style</button>
 
             <!-- 2. Piemērs -->
-            <div>
-                <div>Element</div>
+            <div class="container second">
+                <div id="blink" class="box second-box">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="second-action-btn" onclick="changeStyle()">Change style</button>
 
             <!-- 3. Piemērs -->
             <div>
-                <div>Element</div>
+                <div id="color-ch">Element</div>
             </div>
-            <button>Change style</button>
+            <button id="third-action-btn" onclick="changeStyle()">Change style</button>
         </main>
+        <script src="./js/apps.js"></script>
     </body>
 </html>

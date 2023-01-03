@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container{
+    height: 200px;
+    width: 200px;
+    border: 3px solid black;
+    margin: 30px;
+}
+
+.second{
+    height: 100px;
+    width: 100px;
+    border: 3px solid palevioletred;
+    margin: 30px;
+}
+
+.box{
+    /*position: static;*/
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    color:  white;
+    font-weight: bold;
+    line-height: 100px;
+    transition: all 0,2s linear;
+}
+
+.second-box{
+    /*position: static;*/
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    color:  white;
+    font-weight: bold;
+    line-height: 100px;
+    transition: all 0,2s linear;
+}
+
+#action-btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    transition: all 0.2s ease-in-out;
+}
+
+#action-btn:hover {
+    background-color: white;
+    border: 2px solid crimson;
+    color: crimson;
+}
+
+#second-action-btn{
+    width: 70px;
+    height: 50px;
+    border: none;
+    background-color: lawngreen;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 25px;
+}
+
+#second-action-btn:hover {
+    background-color: white;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+}
+
+
+/* ANIMĀCIJAS PIEMĒRS */
+@keyframes blink{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
