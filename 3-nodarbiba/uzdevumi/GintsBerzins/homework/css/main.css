@@ -2,7 +2,36 @@ main {
     width: 100%;
     height: 100vh;
     padding: 5rem 0 0;
-    color: var(--white);
-    font-weight: bold;
-    text-align: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        width: calc(25% - 30px);
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 1200px) {
+    main {
+        padding: 6rem 0 0;
+    }
+    .card {
+        width: calc(50% - 30px);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    main {
+        padding: 8rem 0 0;
+    }
+    #subtitle {
+        display: block;
+        margin: 0.3rem 0;
+    }
+    #pre-subtitle {
+        display: none;
+    }
+    .card {
+        width: 100%;
+    }
 }

@@ -4,22 +4,82 @@
         <meta charset="UTF-8" />
         <title>Media queries</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
-            <!-- 
-                Izveidot header elementu un noformēt pēc saviem ieskatiem (var izmantot bootstrap)
-             -->
+        
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="header">
+           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4 title">Gints Bērziņš<span id="subtitle"><span id="pre-subtitle">・ </span>Front-end Developer</span></span>
+              </a>
+              <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
         </header>
+        
+        
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand text-primary fs-4" href="#">Gints Bērziņš<span id="subtitle"><span id="pre-subtitle">・ </span>Front-end Developer</span></a>  
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">  
+                <div class="nav nav-pills"> 
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link disabled" href="#">About</a>
+                </div>
+              </div>
+            </div>
+        </nav> -->
+
+        
         <main>
-            <!-- 
-                Izveidot 4 card elementus un noformēt pēc saviem ieskatiem (var izmantot bootstrap).
-                Card elementiem jābūt adaptīviem platumā uz:
-                    - maza izmēra ekrāniem
-                    - vidēja izmēra ekrāniem
-                    - liela izmēra ekrāniem
-             -->
+          <div class="container">    
+          <div class="card">
+            <img src="https://picsum.photos/600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://picsum.photos/600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          </div>
         </main>
+        
     </body>
 </html>

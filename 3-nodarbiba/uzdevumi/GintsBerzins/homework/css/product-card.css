@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 580px;
+    gap: 30px;
+    padding: 30px;
+}
+
+.card {
+    height: max-content;
+    /* width: 18rem; */
+    background-color: var(--light-gray);
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.card-text {
+    padding-bottom: 1rem;
+    color: var(--color-3);
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}

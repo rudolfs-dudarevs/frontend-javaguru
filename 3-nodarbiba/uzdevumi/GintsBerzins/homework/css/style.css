@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap');
 @import "./reset.css";
 @import "./colors.css";
 @import "./header.css";
-@import "./buttons.css";
 @import "./main.css";
 @import "./product-card.css";
+
 
 * {
     box-sizing: border-box;
@@ -15,5 +15,5 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
