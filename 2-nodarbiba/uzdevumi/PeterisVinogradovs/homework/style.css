@@ -22,15 +22,15 @@ main {
     height: 300px;
     border: 3px solid black;
     margin: 30px auto;
+    padding: 1px;
 }
 
 .box {
-    
+    position: relative;
     width: 100px;
     height: 100px;
     line-height: 100px;
     background-color: #4B4453;
-    margin: 1px;
     color: white;
     text-align: center;
     transition: all 0.3s ease-in-out;
@@ -47,10 +47,8 @@ main {
 }
 
 .box-3 {
-    width: 99%;
-    height: 99%;
-    line-height: 293px;
-    margin: 1px auto;
+    width: 100%;
+    height: 100%;   
     background-image: url(https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg);
     background-repeat: no-repeat;
     background-position: center;
