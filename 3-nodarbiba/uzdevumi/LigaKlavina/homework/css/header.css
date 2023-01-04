@@ -1,0 +1,34 @@
+#header {
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 2rem;
+    color: var(--primary);
+    background-color: var(--olive);
+    box-shadow: 0px 1px 4px var(--primary);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary);
+    letter-spacing: 2.5px;
+    margin: 0.5rem 0 0;
+}
+
+#subtitle {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin: 0.5rem 0 0;
+}
+
+@media only screen and (min-width: 1200px) {
+    #header {
+        height: 6rem;
+    }
+
+    #subtitle{
+        display: block;
+    }
+}

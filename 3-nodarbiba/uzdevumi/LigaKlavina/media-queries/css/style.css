@@ -23,18 +23,22 @@ body {
 
     1. Sākot no 1200px ekrāna platuma #header elementa height ir 5rem. 
        Uz mazākiem ekrāna izmēriem tas ir 4rem.
+       Risinājums, pie header.css pieliek @media only screen ar nosacījumiem
 
     2. Sākot no 1200px ekrāna platuma #subtitle elements ir paslēpts - display: block;
        Uz mazākiem ekrāna izmēriem tas ir display: none;
+        Risinājums, pie header.css pieliek @media only screen ar nosacījumiem
 
     Mainīt main elementa padding, iekš main.css faila veikt izmaiņas:
        
     3. Sākot no 1200px ekrāna platuma main elementa padding ir 5rem 0 0;
        Uz mazākiem ekrāniem padding ir 3rem 0 0;
+       Risinājums, pie main.css pieliek @media only screen ar nosacījumiem
 
     Mainīt .product-card elementu platumu, iekš product-card.css veikt izmaiņas:
        
     4. Sākot no 1200px ekrāna platuma .product-card elementu width ir calc(25% - 30px);
        Ekrāna izmērā starp 768px un 1200px .product-card elementu witdh ir calc(50% - 30px);
        Uz mazākiem ekrāna izmēriem .product-card elementu width ir 100%;
+       Risinājums, pie product-card.css pieliek @media only screen ar nosacījumiem
 */

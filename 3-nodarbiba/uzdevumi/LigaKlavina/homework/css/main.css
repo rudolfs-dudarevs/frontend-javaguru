@@ -4,3 +4,19 @@ main {
     padding: 5rem 0 0;
     color: var(--white);
 }
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 580px;
+    gap: 30px;
+    padding: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        padding: 5rem 0 0;
+    }
+}
