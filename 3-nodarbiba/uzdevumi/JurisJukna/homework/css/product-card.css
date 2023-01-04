@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    text-align: center;
     width: 100%;
     min-height: 580px;
     gap: 30px;
@@ -10,11 +11,18 @@
 
 .product-card {
     height: max-content;
-    color: var(--black);
+    color: var(--white);
     background-color: var(--primary);
     border-radius: 8px;
     overflow: hidden;
-    width: 100%;
+    width: 50%;
+}
+
+.card-title {
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    padding: 1rem;
 }
 
 .card-content {
@@ -22,22 +30,29 @@
 }
 
 .card-img {
-    width: 100%;
+    width: 75%;
     height: 50%;
     object-fit: cover;
+    padding-top: 40px;
 }
 
 .card-description {
     padding: 0 0 20px;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .product-card {
+        width: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1200px){
-    #product-card {
-        width: calc(50%-30px);
+    .product-card {
+        width: 45%;
     }
 }
 @media only screen and (min-width: 1200px){
-    #product-card {
-        width: calc(25%-30px);
+    .product-card {
+        width: 45%;
     }
 }
