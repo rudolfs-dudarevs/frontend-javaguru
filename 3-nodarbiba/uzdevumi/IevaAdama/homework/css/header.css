@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: var(--black);
+    background-color: var(--lightblue);
+    box-shadow: 0px 1px 4px var(--black);
+    z-index: 1;
+}
+.navbar-brand, .subtitle{
+    color: var(--black);
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.subtitle{
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-toggler:focus {
+    box-shadow: 0px 0px 3px 1px;
+  }
+  .nav-link:hover{
+    text-decoration: underline;
+  }
