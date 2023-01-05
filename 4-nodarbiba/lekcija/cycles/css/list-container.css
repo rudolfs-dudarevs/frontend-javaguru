@@ -1,0 +1,18 @@
+.list-container {
+    display: none;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.list-container-show {
+    display: block;
+    border: 2px solid var(--secondary);
+}
+
+.list-item {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    line-height: 30px;
+    font-weight: bold;
+}

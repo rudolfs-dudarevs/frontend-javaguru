@@ -1,0 +1,19 @@
+.action-btn {
+    height: 50px;
+    padding: 0 15px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--primary);
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;
+}
+
+.action-btn:hover {
+    background-color: white;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
