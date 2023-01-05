@@ -1,30 +1,31 @@
 #header {
     position: fixed;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     padding: 1rem 2rem;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--primary);
+    background-color: var(--olive);
     box-shadow: 0px 1px 4px var(--primary);
 }
 
 .title {
     font-weight: bold;
-    font-size: 1.7rem;
-    color: var(--black);
-    letter-spacing: 2.1px;
+    font-size: 2rem;
+    color: var(--primary);
+    letter-spacing: 2.5px;
+    margin: 0.5rem 0 0;
 }
 
 #subtitle {
     display: none;
-    font-size: 1rem;
-    color: var(--primary);
-    margin: 0.3rem 0 0;
+    font-size: 1.2rem;
+    color: var(--secondary);
+    margin: 0.5rem 0 0;
 }
 
 @media only screen and (min-width: 1200px) {
     #header {
-        height: 5rem;
+        height: 6rem;
     }
 
     #subtitle{
