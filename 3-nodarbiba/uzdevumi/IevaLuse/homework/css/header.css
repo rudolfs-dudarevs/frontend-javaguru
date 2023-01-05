@@ -1,0 +1,35 @@
+#header{
+    position: fixed;
+    width:100%;
+    padding: 1rem 2rem;
+    box-shadow: 0px 1px 9px var(--tertiary);
+    color: var(--black);
+    background-color: var(--secondary);
+    z-index: 1;
+}
+
+.title{
+font-weight: bold;
+font-size: 2rem;
+letter-spacing: 2px;
+color:var(--white);
+padding-left: 30px;
+}
+
+.subtitle{
+font-size: 1rem;
+margin: 0.3rem 0 0;
+color: var(--primary);
+}
+
+.contact{
+    float: right;
+    font-size: 1rem;
+    padding: 0px 30px;
+}
+
+.portfolio{
+    float: right;
+    font-size:1rem;
+    padding: 0px 30px;
+}
