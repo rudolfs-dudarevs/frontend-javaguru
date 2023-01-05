@@ -1,0 +1,21 @@
+.list-container {
+    display: none;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.list-container-show {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid var(--secondary);
+}
+
+.list-item {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    padding: 10px;
+    line-height: 80px;
+    font-weight: bold;
+}
