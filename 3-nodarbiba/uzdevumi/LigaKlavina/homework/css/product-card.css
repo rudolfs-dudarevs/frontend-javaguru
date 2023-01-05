@@ -11,7 +11,7 @@
 .product-card {
     height: max-content;
     color: var(--black);
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     border-radius: 8px;
     overflow: hidden;
     width: 100%;
