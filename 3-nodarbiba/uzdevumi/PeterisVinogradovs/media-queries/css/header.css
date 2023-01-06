@@ -1,7 +1,7 @@
 #header {
     position: fixed;
     width: 100%;
-    height: 5rem;
+    height: 4rem;
     padding: 1rem 2rem;
     color: var(--black);
     background-color: var(--white);
@@ -21,3 +21,16 @@
     color: var(--primary);
     margin: 0.3rem 0 0;
 }
+
+@media only screen and (min-width: 1200px) {
+    #header {height: 5rem;}
+    #subtitle {display: block}
+}
+
+/* Padarīt header elementu adaptīvu ekrāna platumam, iekš header.css faila veikt izmaiņas:
+
+1. Sākot no 1200px ekrāna platuma #header elementa height ir 5rem. 
+   Uz mazākiem ekrāna izmēriem tas ir 4rem.
+
+2. Sākot no 1200px ekrāna platuma #subtitle elements ir paslēpts - display: black;
+   Uz mazākiem ekrāna izmēriem tas ir display: none; */
