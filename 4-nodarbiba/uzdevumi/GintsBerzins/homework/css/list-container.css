@@ -9,16 +9,44 @@
 .list-item {
     padding: 20px;
     background-color: var(--white);
-    border: 2px solid var(--primary);
+    border: 1px solid var(--gray);
+    width: 20rem;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
 }
 
-.title {
+.list-item p, .list-item li {
+    line-height: 1.4em;
+}
+
+div ul {
+    list-style: none;
+  }
+  
+div ul li::before {
+    content: "\25A0";
+    color: var(--primary);
+    display: inline-block; 
+    font-size: 1rem;
+    width: 1.2em;
+    margin-left: 0;
+  }
+
+.list-title {
     font-size: 24px;
-    margin: 12px 0;
+    font-weight: bold;
+    margin: 5px 0 12px 0;
 }
 
-.subtitle {
+.list-subtitle {
     font-size: 16px;
     font-weight: bold;
     margin: 8px 0;
+    color: var(--primary);
 }
