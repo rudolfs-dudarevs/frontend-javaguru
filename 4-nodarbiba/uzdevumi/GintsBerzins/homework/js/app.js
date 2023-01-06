@@ -37,12 +37,144 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const cvList = [
+    {
+        firstName: "Ilze",
+        lastName: "Ozoliņa",
+        phoneNr: "25666897",
+        email: "ilze.ozolina@gmail.com",
+        workExperience: [
+            "CENTRĀLĀ LABORATORIJA, SIA",
+            "SCHWENK LATVIJA, SIA",
+            "BSW LATVIA, SIA",
+            "C.T.CO, SIA"
+        ],
+        languages: {
+            lat: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Русский",
+                level: "Intermediate"
+            },
+            eng: {
+                name: "English",
+                level: "Intermediate"
+            }
+        }   
+    },
+    
+    {
+        firstName: "Dace",
+        lastName: "Lapiņa",
+        phoneNr: "29345099",
+        email: "lapina-dace@inbox.lv",
+        workExperience: [
+            "GREN LATVIJA, SIA",
+            "KNAUF, SIA",
+            "SANITEX, SIA",
+            "EVOLUTION LATVIA, SIA"
+        ],
+        languages: {
+            lat: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Русский",
+                level: "Fluent"
+            },
+            eng: {
+                name: "English",
+                level: "Elementary"
+            }
+        }
+    },
+
+    {
+        firstName: "Elmārs",
+        lastName: "Dzenis",
+        phoneNr: "28455290",
+        email: "elmarsdzenis@latvenergo.lv",
+        workExperience: [
+            "LATVENERGO, AS",
+            "KRONOSPAN RIGA, SIA",
+            "LATVIJAS FINIERIS, AS",
+            "MIKROTĪKLS, SIA"
+        ],
+        languages: {
+            lat: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Русский",
+                level: "Fluent"
+            },
+            eng: {
+                name: "English",
+                level: "Intermediate"
+            }
+        }
+    },
+
+    {
+        firstName: "Jānis",
+        lastName: "Rubenis",
+        phoneNr: "24333787",
+        email: "rubenis@latvenergo.lv",
+        workExperience: [
+            "AKZ, SIA",
+            "CITADELE BANKA, AS",
+            "GRINDEKS, AS",
+            "BITE LATVIJA, SIA"
+        ],
+        languages: {
+            lat: {
+                name: "Latviešu",
+                level: "Native"
+            },
+            rus: {
+                name: "Русский",
+                level: "Elementary"
+            },
+            eng: {
+                name: "English",
+                level: "Intermediate"
+            }
+        }
+    }
+];
 
 const appendListElements = () => {
     listContainer.innerHTML = "";
-
-    cvList.forEach(() => {
-        
+    listContainer.classList.add('list-container');
+    
+    cvList.forEach((person) => {
+        const listEl = `
+            <div class="list-item">
+            <h2 class="list-title">${person.firstName} ${person.lastName}</h2>
+            <p class="text">Phone Nr.: ${person.phoneNr}</p>
+            <p class="text">E-mail: <a href="mailto:${person.email}">${person.email}</a></p>
+            <p class="list-subtitle">Work experience:</p>
+                <ul>
+                    <li class="text">${person.workExperience[0]}</li>
+                    <li class="text">${person.workExperience[1]}</li>
+                    <li class="text">${person.workExperience[2]}</li>
+                    <li class="text">${person.workExperience[3]}</li>
+                </ul>
+            </p>
+            <p class="list-subtitle">Languages:</p>
+                <ul>
+                    <li class="text">${person.languages.lat.name} - ${person.languages.lat.level}</li>
+                    <li class="text">${person.languages.rus.name} - ${person.languages.rus.level}</li>
+                    <li class="text">${person.languages.eng.name} - ${person.languages.eng.level}</li>
+                </ul>      
+            </div>
+        `;
+        listContainer.innerHTML += listEl;
     })
 }
+
+generateListBtn.addEventListener("click", appendListElements);
