@@ -5,15 +5,16 @@
 @import "./buttons.css";
 @import "./main.css";
 @import "./product-card.css";
+@import "./header.css";
 
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 16px;
+    font-size: 25px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Andika', sans-serif;
 }
