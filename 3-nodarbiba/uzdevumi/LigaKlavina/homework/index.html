@@ -4,15 +4,61 @@
         <meta charset="UTF-8" />
         <title>Media queries</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <header>
+        <header id="header">
+            <h1 class="title">
+                Līga Kļaviņa
+                <span id="subtitle">
+                    Pirmais kucēns
+                </span>
+            </h1>
             <!-- 
                 Izveidot header elementu un noformēt pēc saviem ieskatiem (var izmantot bootstrap)
              -->
         </header>
         <main>
+            <div class="container">
+                <div class="product-card">
+                    <img src="https://picsum.photos/600" alt="" class="card-img">
+                    <div class="card-content">
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi modi excepturi explicabo sunt dicta illo ullam veritatis corrupti et tenetur?</p>
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-secondary">Explore</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/600" alt="" class="img-circle" width="100%" height="50%">
+                    <!-- 
+                Eksperiments ar bootstarp.       
+                Kur slēpjas iemesls, ka tikko paņem bootstrap definēto class, tā nojaucās vienmērīgs izkārtojums?
+                Nav skaisti visas bildes vienā rindā pat, ja visām bildēm definēju vienādu class.
+             -->
+                    <div class="card-content">
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi modi excepturi explicabo sunt dicta illo ullam veritatis corrupti et tenetur?</p>
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-secondary">Explore</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/600" alt="" class="card-img">
+                    <div class="card-content">
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi modi excepturi explicabo sunt dicta illo ullam veritatis corrupti et tenetur?</p>
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-secondary">Explore</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/600" alt="" class="card-img">
+                    <div class="card-content">
+                        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi modi excepturi explicabo sunt dicta illo ullam veritatis corrupti et tenetur?</p>
+                        <button class="btn btn-primary">Buy now</button>
+                        <button class="btn btn-secondary">Explore</button>
+                    </div>
+                </div>
+            </div>
             <!-- 
                 Izveidot 4 card elementus un noformēt pēc saviem ieskatiem (var izmantot bootstrap).
                 Card elementiem jābūt adaptīviem platumā uz:
