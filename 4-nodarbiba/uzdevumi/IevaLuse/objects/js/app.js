@@ -1,4 +1,34 @@
 // Izveidot Objektu, kas saturēs informāciju par jūsu personīgo vai izdomāta tēla CV.
+const ievaLuse = {
+    firstName:"Ieva",
+    lastName: "Lūse",
+    email: "info.luuse@gmail.com",
+    phoneNumber: 29886025,
+    workExperience: [
+        "Stomatoloģijas Institūts",
+        "Studio Moderna",
+        "Klīversala",
+        "Sapņi un kokteiļi"
+    ],
+    languages: {
+        lv:{
+            name: "Latviešu",
+            level: "Dzimtā"
+        },
+        eng:{
+            name: "Angļu",
+            level: "Sarunvaloda"
+        },
+        rus:{      
+            name: "Krievu",
+            level: "Sarunvaloda"
+        }
+          }
+};
+
+console.log("Person full name:", ievaLuse.firstName + " " + ievaLuse.lastName);
+console.log(ievaLuse.firstName + " " + ievaLuse.lastName, "Strādāja uzņēmumā: " + ievaLuse.workExperience[1]);
+console.log(ievaLuse.firstName + " " + ievaLuse.lastName, `${ievaLuse.languages.eng.name} - ${ievaLuse.languages.eng.level}`);
 
 // 1. Mainiga nosaukums, kurš satur Objektu ir vardsUzvards (jūsu vārds/uzvārds)
 // 2. CV objekts satur 3 īpašības (properties) ar string tipa vērtību:
