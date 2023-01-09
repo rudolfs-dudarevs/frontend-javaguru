@@ -1,6 +1,40 @@
 main {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    padding: 5rem 0 0;
-    color: var(--white);
+    padding: 9rem;
+    margin-top: 1rem;
+    color: var(--black);
+    text-align: center;
+    font-weight: bold;
+}
+
+.col{
+    height: 4rem;
+    line-height: 4rem;
+    border: 1px solid gray;
+    background-color: lightblue;
+}
+
+.card-text{
+    margin-bottom: 15px;
+}
+
+.btn-primary{
+    background-color: #cb4eb8;
+}
+
+.card-title{
+    font-style: bold;
+    color:white;
+}
+
+.card-text{
+    font-style: italic;
+    color: white;
+}
+
+.card-body{
+    background-color: #082243;
 }
