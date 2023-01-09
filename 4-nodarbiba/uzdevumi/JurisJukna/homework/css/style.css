@@ -23,4 +23,6 @@ main {
     flex-wrap: wrap;
     min-height: 100vh;
     padding: 130px 0 0;
+    background-image: url(https://www.wallpapertip.com/wmimgs/199-1991695_avengers-endgame-wallpapers-hd-background-images-youtube-channel.jpg);
+    background-size: cover;
 }

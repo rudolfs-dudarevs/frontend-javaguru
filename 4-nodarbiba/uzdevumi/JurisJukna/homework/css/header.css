@@ -4,18 +4,24 @@
     padding: 1rem 2rem;
     color: var(--black);
     box-shadow: 0px 1px 4px var(--primary);
-    background-color: var(--white);
     color: var(--black);
+    background-image: url(https://t4.ftcdn.net/jpg/01/94/35/19/360_F_194351905_FlzhKrXQkZdLBaq1wZmssTSILprWRghW.jpg);
+    background-size: cover;
+    z-index: 1;
+    
+    
 }
 
-.title {
+.title2 {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
     letter-spacing: 2.1px;
+    color: azure;
 }
 
-.subtitle {
-    font-size: 1rem;
+.subtitle2 {
+    font-size: 1.5rem;
     color: var(--primary);
     margin: 0.3rem 0 0;
 }

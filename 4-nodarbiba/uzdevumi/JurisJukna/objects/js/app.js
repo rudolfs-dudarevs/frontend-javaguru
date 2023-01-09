@@ -34,3 +34,36 @@
 //    -- piem., vardsUzvards.languages.lv objekta īpašību apvienojums izskatītos šādi:
 //       Latviešu - Native 
 //       Un tiktu panākta ar string literal pierakstu `${vardsUzvards.languages.lv.name} - ${vardsUzvards.languages.lv.level}`
+
+const jurisJukna = {
+    cV:{
+        firstName: "Juris",
+        lastName: "Jukna",
+        email: "juris.jukna@inbox.lv",
+        phone: 28800820,
+        workExperience:[
+            "Phoenix IT LTD",
+            "THE WHITE COMPANY LTD",
+            "SIA 'STOKKER'",
+            "SIA 'Mēbeļu outlets GIGANT'"
+        ],
+        languages: {
+            lv:{
+                name: "Latvian",
+                level: "Native"
+            },
+            ru: {
+                name: "Russian",
+                level: "Fluent"
+            },
+            eng: {
+                name: "English",
+                level: "Fluent"
+            }
+        }
+    }
+}
+
+console.log("Person full name:", jurisJukna.cV.firstName +" "+ jurisJukna.cV.lastName);
+console.log("One of work expirience:", jurisJukna.cV.workExperience[1]);
+console.log(`${jurisJukna.cV.languages.eng.name} - ${jurisJukna.cV.languages.eng.level}`)

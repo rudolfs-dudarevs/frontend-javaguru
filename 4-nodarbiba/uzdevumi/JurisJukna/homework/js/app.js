@@ -31,140 +31,149 @@
 //        </ul>
 // 5. Katrā iterācijā izveidoto string mainīgo pievienot #list-container elementa innerHTML īpašībai.
 // 6. funkciju appendListElements piesaistīts pogas #generate-list-btn klikšķim/
-// 7. Brīvi noformēt katru .list-item elementu ar CSS iekš list-container.css faila.
-//    Ieteicams izveidojot katra .list-item child elementus jeb tur iekšā esošos <h2>, <p>, <ul> un <li> elementus - piešķirt šiem elementiem class atribūtus, kad tie tiek izveidoti.
+// 7. Brīvi noformēt katru .list-hero elementu ar CSS iekš list-container.css faila.
+//    Ieteicams izveidojot katra .list-hero child elementus jeb tur iekšā esošos <h2>, <p>, <ul> un <li> elementus - piešķirt šiem elementiem class atribūtus, kad tie tiek izveidoti.
 
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
 const cvList = [
     {
-        firstName: "Dita",
-        lastName: "Dzene",
-        phoneNr: 1234567,
-        email: "dita.dzene@gmail.com",
-        workExperiences: [
-            "SIA Neotech",
-            "SIA TerGravit",
-            "SIA Jumis",
-            "SIA Accenture"
+        firstName: "Tony",
+        lastName: "Stark",
+        phoneNr: 666000751,
+        email: "tony.stark@avengers.com",
+        workExperience: [
+            "Avengers",
+            "Starks Industries",
+            "Illuminati",
+            "S.H.I.E.L.D."
         ],
-        languages: {
-            lv: {
-                name: "Latviešu",
-                level: "Native"
+        powers: {
+            sen:{
+                name: "Senses",
+                level: "Heightened"
             },
-            rus: {
-                name: "Krievu",
-                level: "Fluent"
+            str:{
+                name: "Strength",
+                level: "Superhuman"
             },
-            eng: {
-                name: "Angļu",
-                level: "Intermediate"
+            int:{
+                name: "Intelligence",
+                level: "Genius"
             }
-        }
+        },
+        avatar: "https://www.disneyphile.fr/wp-content/uploads/2020/12/iron-man-960x540.jpg"
     },
+
     {
-        firstName: "Laura",
-        lastName: "Zemene",
-        phoneNr: 1234567,
-        email: "laura.zemene@gmail.com",
-        workExperiences: [
-            "SIA Stenders",
-            "SIA PipeLife",
-            "SIA Rimi",
-            "SIA Wordingday"
+        firstName: "Steve",
+        lastName: "Rogers",
+        phoneNr: 666000755,
+        email: "steve.rogers@avengers.com",
+        workExperience: [
+            "Avengers",
+            "Secret Avengers",
+            "Illuminati",
+            "S.H.I.E.L.D."
         ],
-        languages: {
-            lv: {
-                name: "Latviešu",
-                level: "Native"
+        powers: {
+            sen:{
+                name: "Senses",
+                level: "Superhuman"
             },
-            rus: {
-                name: "Krievu",
-                level: "Beginner"
+            str:{
+                name: "Strength",
+                level: "Superhuman"
             },
-            eng: {
-                name: "Angļu",
-                level: "Intermediate"
+            int:{
+                name: "Intelligence",
+                level: "Superhuman"
             }
-        }
+        },
+        avatar: "https://images.thedirect.com/media/article_full/capagent_1.jpg"
     },
+
     {
-        firstName: "Artis",
-        lastName: "Lācis",
-        phoneNr: 1234567,
-        email: "artis.lacis@gmail.com",
-        workExperiences: [
-            "SIA Gauja",
-            "SIA Daugava",
-            "SIA Venta",
-            "SIA Abava"
+        firstName: "Natasha",
+        lastName: "Romanoff",
+        phoneNr: 666000777,
+        email: "natasha.romanoff@avengers.com",
+        workExperience: [
+            "Avengers",
+            "Secret Avengers",
+            "Russian Killer association",
+            "S.H.I.E.L.D."
         ],
-        languages: {
-            lv: {
-                name: "Latviešu",
-                level: "Native"
+        powers: {
+            sen:{
+                name: "Senses",
+                level: "Heightened"
             },
-            rus: {
-                name: "Krievu",
-                level: "Beginner"
+            str:{
+                name: "Strength",
+                level: "Human"
             },
-            eng: {
-                name: "Angļu",
-                level: "Fluent"
+            int:{
+                name: "Intelligence",
+                level: "Above average"
             }
-        }
+        },
+        avatar: "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/05/Black-Widow-MCU-Timeline-Complete-Story-SR.jpg"
     },
+    
+
     {
-        firstName: "Laima",
-        lastName: "Strada",
-        phoneNr: 1234567,
-        email: "laima.strada@gmail.com",
-        workExperiences: [
-            "SIA Kurzeme",
-            "SIA Vidzeme",
-            "SIA Latgale",
-            "SIA Zemgale"
+        firstName: "Bruce",
+        lastName: "Banner",
+        phoneNr: 666000666,
+        email: "bruce.banner@avengers.com",
+        workExperience: [
+            "Avengers",
+            "The Defenders",
+            "Illuminati",
+            "Horizon Labs"
         ],
-        languages: {
-            lv: {
-                name: "Latviešu",
-                level: "Beginner"
+        powers: {
+            sen:{
+                name: "Senses",
+                level: "Superhuman"
             },
-            rus: {
-                name: "Krievu",
-                level: "Fluent"
+            str:{
+                name: "Strength",
+                level: "Superhuman"
             },
-            eng: {
-                name: "Angļu",
-                level: "FNative"
+            int:{
+                name: "Intelligence",
+                level: "Genius"
             }
-        }
-    },
-];
+        },
+        avatar: "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/11/Hulk-Smart-Bruce-Banner.jpg"
+    }
+]
 
 const appendListElements = () => {
     listContainer.innerHTML = "";
 
-    cvList.forEach((item) => {
+    cvList.forEach((hero) => {
         const cvCard = `
-            <div class="list-item">
-                <h2 class="title">${item.firstName} ${item.lastName}</h2>
-                <p class="text">PhoneNr.: ${item.phoneNr}</p>
-                <p class="text">Email: ${item.email}</p>
+            <div class="list-hero">
+            <img src="${hero.avatar}" alt="Avenger" style="width:417px;height:235px;">
+                <h2 class="title">${hero.firstName} ${hero.lastName}</h2>
+                <p class="text">PhoneNr.: ${hero.phoneNr}</p>
+                <p class="text">Email:<p class="email"> ${hero.email}</p></p>
                 <p class="subtitle">Work experiences</p>
                 <ul>
-                    <li class="text">${item.workExperiences[0]}</li>
-                    <li class="text">${item.workExperiences[1]}</li>
-                    <li class="text">${item.workExperiences[2]}</li>
-                    <li class="text">${item.workExperiences[3]}</li>
+                    <li class="text">${hero.workExperience[0]}</li>
+                    <li class="text">${hero.workExperience[1]}</li>
+                    <li class="text">${hero.workExperience[2]}</li>
+                    <li class="text">${hero.workExperience[3]}</li>
                 </ul>
-                <p class="subtitle">Languages</p>
+                <p class="subtitle">POWER SKILLS</p>
                 <ul>
-                    <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
-                    <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
-                    <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+                    <li class="text">${hero.powers.sen.name} - ${hero.powers.sen.level}</li>
+                    <li class="text">${hero.powers.str.name} - ${hero.powers.str.level}</li>
+                    <li class="text">${hero.powers.int.name} - ${hero.powers.int.level}</li>
                 </ul>
             </div>
         `;

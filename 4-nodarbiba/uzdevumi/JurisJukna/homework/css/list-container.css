@@ -6,19 +6,29 @@
     margin: 30px auto;
 }
 
-.list-item {
+.list-hero {
     padding: 20px;
     background-color: var(--white);
     border: 2px solid var(--primary);
 }
 
 .title {
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: bold;
     margin: 12px 0;
 }
 
 .subtitle {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin: 8px 0;
+}
+
+.text {
+    font-weight: bold;
+}
+
+.email {
+    color: blue;
+    font-weight: bold;
 }
