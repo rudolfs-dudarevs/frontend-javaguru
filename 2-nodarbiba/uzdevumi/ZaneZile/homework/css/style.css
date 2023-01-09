@@ -1,0 +1,42 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+    font-size: 50px;
+    color:rgb(41, 1, 79);
+    text-align: center;
+}
+
+div {
+   font-size: 25px;
+   font-weight: bold;
+   text-align: left;
+   color:rgb(41, 1, 79);
+   margin: 5px;
+   text-align: center;
+}
+
+#action-btn {
+    width: 405px;
+    height: 45px;
+    border: none;
+    font-size: 18;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(212, 211, 211);
+    background-color: rgb(60, 61, 62);
+    transition: all 0.2s ease-in-out;
+    display: block;
+    margin: 0 auto;
+}
+#action-btn:hover {
+    background-color: rgb(142, 140, 140);
+    color: rgb(252, 252, 252);
+    
+}
