@@ -3,18 +3,19 @@
     gap: 30px;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .list-item {
     padding: 20px;
-    background-color: var(--white);
+    background-color: var(--secondary);
     border: 2px solid var(--primary);
 }
 
 .title {
     font-size: 24px;
     margin: 12px 0;
+    color: var(--white);
 }
 
 .subtitle {
