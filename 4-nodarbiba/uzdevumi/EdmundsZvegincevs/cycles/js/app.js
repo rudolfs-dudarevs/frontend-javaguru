@@ -16,8 +16,20 @@ const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
 const backgroundColors = ["blueviolet", "darkorange", "crimson", "darkmagenta", "deeppink", "plum"];
-const boxList = ["Box 1", "Box 2", "Box 3"];
+const boxList = ["Box 1", "Box 2", "Box 3", "Box4", "Box5", "Box6"];
 
 const appendListElements = () => {
-    
+    listContainer.innerHTML = "";
+    listContainer.classList.add('list-container-show');
+
+    boxList.forEach((element, index) => {
+        const listEl = `
+            <div class="list-item" style="background-color: ${backgroundColors[index]};">
+                ${element}
+            </div>
+        `;
+        listContainer.innerHTML += listEl;
+    });
 }
+
+generateListBtn.addEventListener("click", appendListElements);
