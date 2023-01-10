@@ -37,12 +37,139 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const cvList = [
+    {
+        firstName: "Ieva",
+        lastName: "Ādama",
+        email: "adama.ieva02@gmail.com",
+        phoneNr: "27491131",
+        workExperience:[
+            "IK Aleksale",
+            "ZS Zīļudārzs",
+            "SIA Kiddicare",
+            "SIA Ādere"
+        ],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native",
+            },
+            rus: {
+                name: "Krievu",
+                level: "basic",
+            },
+            eng: {
+                name: "Angļu",
+                level: "good",
+            },
+        }
+    },
+    {
+        firstName: "Santa",
+        lastName: "Dzene",
+        email: "sanata.dzene@gmail.com",
+        phoneNr: "24855113",
+        workExperience:[
+            "IK Saac",
+            "SIA Liepkalni",
+            "SIA forte",
+            "SIA Red"
+        ],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native",
+            },
+            rus: {
+                name: "Krievu",
+                level: "good",
+            },
+            eng: {
+                name: "Angļu",
+                level: "gbasic",
+            },
+        }
+    },
+    {
+        firstName: "Jānis",
+        lastName: "Kalniņš",
+        email: "janis.kalnins@gmail.com",
+        phoneNr: "29766854",
+        workExperience:[
+            "SIA Robots",
+            "SIA Delfi",
+            "SIA Group AB",
+            "SIA Resistence"
+        ],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native",
+            },
+            rus: {
+                name: "Krievu",
+                level: "Exelent",
+            },
+            eng: {
+                name: "Angļu",
+                level: "Exelent",
+            },
+        }
+    },
+    {
+        firstName: "Raivis",
+        lastName: "Stiprais",
+        email: "raivis.stiprais@gmail.com",
+        phoneNr: "27899765",
+        workExperience:[
+            "IK Zole",
+            "SIA Visums",
+            "SIA Apversums",
+            "SIA Radion"
+        ],
+        languages: {
+            lv: {
+                name: "Latviešu",
+                level: "Native",
+            },
+            rus: {
+                name: "Krievu",
+                level: "good",
+            },
+            eng: {
+                name: "Angļu",
+                level: "good",
+            },
+        }
+    }
+];
 
 const appendListElements = () => {
     listContainer.innerHTML = "";
+    listContainer.classList.add('list-container-show');
 
-    cvList.forEach(() => {
-        
-    })
+    cvList.forEach((data) => {
+             const cvCard = `
+             <div class="list-item">
+                <h2 class="item"> ${data.firstName} ${data.lastName}</h2>
+                <p class="text">Phone Nr.: ${data.phoneNr} </p>
+                <p class="text">Email: ${data.email} </>
+                <p class="subtitle">Work experience</p>
+                <ul>
+                   <li class="text">${data.workExperience[0]}</li>
+                   <li class="text">${data.workExperience[1]}</li>
+                   <li class="text">${data.workExperience[2]}</li>
+                   <li class="text">${data.workExperience[3]}</li>
+                </ul>
+                <p class="subtitle">Languages</p>
+                <ul>
+                   <li class="text">${data.languages.lv.name} - ${data.languages.lv.level}</li>
+                   <li class="text">${data.languages.rus.name} - ${data.languages.rus.level}</li>
+                   <li class="text">${data.languages.eng.name} - ${data.languages.eng.level}</li>
+                </ul>
+             </div>
+         `;
+         listContainer.innerHTML += cvCard;
+    });
 }
+generateListBtn.addEventListener("click", appendListElements);
