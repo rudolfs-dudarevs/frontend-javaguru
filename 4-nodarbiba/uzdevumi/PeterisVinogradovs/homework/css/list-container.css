@@ -1,6 +1,6 @@
 .list-container {
     display: flex;    
-    gap: 30px;
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 30px auto;
@@ -17,14 +17,11 @@
 .title {
     font-size: 24px;
     margin: 12px 0;
+    color: var(--primary);
 }
 
 .subtitle {
     font-size: 16px;
     font-weight: bold;
     margin: 8px 0;
-}
-
-.title {
-    color: var(--primary);
 }
