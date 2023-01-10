@@ -22,5 +22,5 @@ main {
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    padding: 130px 0 0;
+    padding: 120px 0 0;
 }

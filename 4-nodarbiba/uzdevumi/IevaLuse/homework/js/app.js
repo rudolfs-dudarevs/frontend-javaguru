@@ -37,12 +37,139 @@
 const listContainer = document.getElementById("list-container");
 const generateListBtn = document.getElementById("generate-list-btn");
 
-const cvList = [];
+const cvList = [
+    {
+        firstName: "Zane",
+        lastName: "Krūze",
+        phoneNumber: 29876453,
+        email: "zanee@zanne.lv",
+        workExperience:[
+            "SIA Austris",
+            "SIA Bērzi",
+            "SIA Duvis",
+            "SIA Apeldos"
+        ],
+        languages:{
+            lv:{
+                name:"Latvian",
+                level:"Native"
+            },
+            rus:{
+                name:"Russian",
+                level:"Beginner",
+            },
+            eng:{
+                name:"English",
+                level:"Intermediate"
+            }
+        }
+    },
+    {
+        firstName:"Ella",
+        lastName:"Jaukā",
+        phoneNumber:28957463,
+        email:"ella@inbox.lv",
+        workExperience:[
+            "Z/S Auliņi",
+            "SIA Zoses",
+            "SIA Smukums",
+            "SIA Roži"
+        ],
+        languages:{
+            lv:{
+                name:"Latvian",
+                level:"Native"
+            },
+            rus:{
+                name:"Russian",
+                level:"Fluent"
+            },
+            eng:{
+                name:"English",
+                level:"Beginner"
+            },
+        }
+    },
+    {
+        firstName:"Ilze",
+        lastName:"Bērziņa",
+        phoneNumber:24875945,
+        email:"ilzuks@gmail.com",
+        workExperience:[
+            "SIA Lēmani",
+            "SIA Spoki",
+            "SIA Dukuļi",
+            "SIA Frīdes"
+        ],
+        languages:{
+            lv:{
+                name:"Latvian",
+                level:"Native"
+            },
+            rus:{
+                name:"Russian",
+                level:"Fluent"
+            },
+            eng:{
+                name:"English",
+                level:"Fluent"
+            }
+        }
+    },
+    {
+        firstName:"Žanis",
+        lastName:"Glītais",
+        phoneNumber:26785946,
+        email:"zanitis@inbox.lv",
+        workExperience:[
+            "A/S Latvijas Gāze",
+            "SIA Amoliņi",
+            "SIA Jēkabi",
+            "SIA Zemenes"
+        ],
+        languages:{
+            lv:{
+                name:"Latvian",
+                level:"Native"
+            },
+            rus:{
+                name:"Russian",
+                level:"Beginner"
+            },
+            eng:{
+                name:"English",
+                level:"Intermediate"
+            }
+        }
+    },
+];
 
 const appendListElements = () => {
     listContainer.innerHTML = "";
 
-    cvList.forEach(() => {
+    cvList.forEach((item) => {
+        const cvCard = `
+           <div class="list-item">
+            <h2 class="title"> ${item.firstName} ${item.lastName}</h2>
+            <p class="text">PhoneNumber: ${item.phoneNumber}</p>
+            <p class="text">Email: ${item.phoneNumber}</p>
+            <p class="subtitle">Work experience</p>
+            <ul>
+               <li class="text">${item.workExperience[0]}</li>
+               <li class="text">${item.workExperience[1]}</li>
+               <li class="text">${item.workExperience[2]}</li>
+               <li class="text">${item.workExperience[3]}</li>
+            </ul>
+            <p class="subtitle">Languages</p>
+            <ul>
+                <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+                <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+                <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
+            </ul>
+        </div>
+        `;
         
+        listContainer.innerHTML += cvCard;
     })
 }
+generateListBtn.addEventListener("click", appendListElements);
