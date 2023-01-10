@@ -1,6 +1,6 @@
 .action-btn {
     height: 50px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     border: none;
     background-color: transparent;
     font-weight: bold;
@@ -10,6 +10,7 @@
     background-color: var(--primary);
     transition: all 0.2s ease-in-out;
     border: 2px solid transparent;
+    margin: 0 auto 0 auto;    
 }
 
 .action-btn:hover {
