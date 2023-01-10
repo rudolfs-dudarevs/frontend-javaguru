@@ -162,9 +162,9 @@ const appendListElements = () => {
         </ul>
         <p class="subtitle">Languages</p>
        <ul>
-            <li class="text">${janisKalnins.languages.lv.name} - ${janisKalnins.languages.lv.level}</li>
-            <li class="text">${janisKalnins.languages.rus.name} - ${janisKalnins.languages.rus.level}</li>
-            <li class="text">${janisKalnins.languages.eng.name} - ${janisKalnins.languages.eng.level}</li>
+            <li class="text">${item.languages.lv.name} - ${item.languages.lv.level}</li>
+            <li class="text">${item.languages.rus.name} - ${item.languages.rus.level}</li>
+            <li class="text">${item.languages.eng.name} - ${item.languages.eng.level}</li>
         </ul>
         </div>        
         `

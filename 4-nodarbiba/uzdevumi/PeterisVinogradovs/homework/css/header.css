@@ -7,16 +7,15 @@
     border: solid 2px var(--primary);
 }
 
-.title {
+.header {
     font-weight: bold;
     text-align: center;
     font-size: 1.7rem;
-    color: var(--white);
     letter-spacing: 2.1px;
 }
 
 .subtitle {
     font-size: 1.2rem;
     color: var(--primary);
-    margin: 0.3rem 0 0;
+    
 }
